@@ -42,7 +42,7 @@ const calculateNodePosition = (index: number) => ({
   y: Math.floor(index / FLOW_CONFIG.GRID.COLUMNS) * FLOW_CONFIG.GRID.NODE_HEIGHT + FLOW_CONFIG.GRID.OFFSET_Y,
 });
 
-const createEdgeConfig = (source: string, target: string) => ({
+const createEdgeConfig = (source: string, target: string): Edge => ({
   id: `${source}-${target}`,
   source,
   target,
@@ -52,7 +52,7 @@ const createEdgeConfig = (source: string, target: string) => ({
   animated: true,
   style: { stroke: FLOW_CONFIG.EDGE.COLOR, strokeWidth: FLOW_CONFIG.EDGE.WIDTH },
   markerEnd: {
-    type: 'arrowclosed' as const,
+    type: 'arrowclosed',
     color: FLOW_CONFIG.EDGE.COLOR,
   },
 });
@@ -64,7 +64,11 @@ function getTaskEdges(tasks: Task[]): Edge[] {
     if (task.dependencies) {
       for (const depId of task.dependencies) {
         if (tasks.some(t => t.id === depId)) {
-          edges.push(createEdgeConfig(depId, task.id));
+          edges.push({
+            ...createEdgeConfig(depId, task.id),
+            sourceHandle: 'source',
+            targetHandle: 'target'
+          });
         }
       }
     }
