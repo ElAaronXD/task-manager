@@ -1,3 +1,5 @@
+<img width="1919" height="882" alt="image" src="https://github.com/user-attachments/assets/36a6aaca-c6d9-4f89-a26a-26b096c3ca5c" />
+
 # 📋 Task Manager
 
 Um gerenciador de tarefas moderno construído com React, TypeScript e Vite, oferecendo visualizações em Kanban Board e Flow Chart para organização eficiente de projetos e tarefas.
